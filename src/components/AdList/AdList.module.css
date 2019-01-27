@@ -1,0 +1,16 @@
+.ListBlock {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  line-height: 22px;
+}
+
+.Title {
+  width: 640px;
+  margin: auto;
+  line-height: 38px;
+  font-size: 24px;
+  text-align: left;
+  margin: 54px 0 23px;
+  font-weight: 600;
+}

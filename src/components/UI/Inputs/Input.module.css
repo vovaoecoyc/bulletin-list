@@ -1,0 +1,57 @@
+.InputStyle, .TextAreaStyle {
+  width: 410px;
+  height: 36px;
+  border-radius: 3px;
+  border: 1px solid #d4d8db;
+  box-shadow: inset 0 1px 3px 0 rgba(27, 40, 52, 0.08);
+  outline: none;
+  padding: 0 16px;
+  margin: 0 0 29px;
+}
+
+.TextAreaStyle {
+  height: 147px;
+  padding: 8px 16px;
+}
+
+.InputStyle::placeholder, .TextAreaStyle::placeholder {
+  font-size: 14px;
+}
+
+.InputFileStyle {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin: 0 0 29px;
+}
+
+.InputFileStyle > input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  top: -20px;
+  width: 178px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.InputFileStyle > label {
+  cursor: pointer;
+}
+
+.InputFileStyle > label > button {
+  width: 178px;
+  height: 36px;
+  background-color: #ffffff;
+  color: #2d74da;
+  border: 1px solid #2d74da;
+}
+
+select.InputStyle > option {
+  color: #68717c;
+  background-color: #ffffff;
+}
+
+select.InputStyle > option:hover {
+  color: #ffffff;
+  background-color: #2d74da;
+}

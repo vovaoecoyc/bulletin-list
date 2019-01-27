@@ -1,0 +1,53 @@
+.FormStyle {
+  display: flex;
+  flex-direction: column;
+  line-height: 22px;
+}
+
+.FormItem {
+  display: flex;
+}
+
+.DataBlcok {
+  display: flex;
+  flex-direction: column;
+}
+
+.ErrorBlock {
+  line-height: 22px;
+  align-self: center;
+  margin-left: 25px; 
+  width: 170px;
+}
+
+.ErrorBlock > img {
+  margin: 0 5px -4px 0;
+}
+
+.ErrorBlock.NotValid {
+  color: #fa5e5b
+}
+
+.ErrorBlock.Valid {
+  color: #16c98d
+}
+
+.LabelStyle {
+  align-self: flex-start;
+  color: #68717c;
+  line-height: 22px;
+  margin: 0 0 8px;
+}
+
+.Image {
+  margin-bottom: 23px;
+  width: 69px;
+  height: 52px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Hide {
+  display: none;
+}

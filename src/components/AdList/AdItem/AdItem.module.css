@@ -1,0 +1,87 @@
+.ItemBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 78px;
+}
+
+.LeftBlock {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.LeftBlock {
+  width: 60%;
+}
+
+.RightBlock, {
+  width: 40%;
+}
+
+.RightBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+.TitleAd {
+  font-size: 18px;
+}
+
+.DescriptionAd {
+  font-size: 14px;
+  color: #68717c;
+}
+
+.RightBlockTop > img {
+  margin: 0 7px 0 0;
+}
+
+.RightBlockBottom, .RightBlockTop {
+  display: flex;
+  align-self: flex-end;
+}
+
+.RightBlockTop {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  line-height: 0px;
+}
+
+.RightBlockTop > div {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.RightBlockTop > div > span {
+  margin-left: 5px;
+}
+
+.RightBlockTop > div:nth-child(2) {
+  margin-top: 14px;
+}
+
+.RightBlockBottom {
+  flex-direction: column;
+}
+
+.RightBlockBottom > button:nth-child(2) {
+  margin: 0;
+}
+
+.SubInformation {
+  display: flex;
+  align-items: center;
+}
+
+.Image {
+  width: 332px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,49 @@
+.ButtonSend {
+  width: 141px;
+  height: 36px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #2d74da;
+  border: none;
+  cursor: pointer;
+}
+
+.ButtonSend:hover:not(:disabled) {
+  color: #2d74da;
+  background-color: #ffffff;
+  border: 1px solid #2d74da;
+}
+
+.ButtonSend:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.ButtonRemove, .ButtonEdit {
+  width: 178px;
+  height: 36px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.ButtonEdit {
+  color: #2d74da;
+  border: 1px solid #2d74da;
+}
+
+.ButtonEdit:hover {
+  color: #ffffff;
+  background-color: #2d74da;
+}
+
+.ButtonRemove {
+  color: #fa5e5b;
+  border: 1px solid #fa5e5b;
+}
+
+.ButtonRemove:hover {
+  color: #ffffff;
+  background-color: #fa5e5b;
+}

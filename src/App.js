@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import AppContext from './Context';
+import FormOfSend from './components/FormOfSend';
+import AdList from './components/AdList';
+
 class App extends Component {
+  state = {
+    adverts:
+      localStorage.getItem('adverts') !== null && localStorage.getItem('adverts') !== undefined
+        ? JSON.parse(localStorage.getItem('adverts'))
+        : [],
+  };
+
+  reloadData = () => {
+    let newData = JSON.parse(localStorage.getItem('adverts'));
+    this.setState(prevState => ({ adverts: newData }));
+  };
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <AppContext.Provider value={{ reloadData: this.reloadData, ...this.state }}>
+        <div className="App">
+          <div className="Title">
+            <span>Подать объявление</span>
+          </div>
+          <FormOfSend />
+          <AdList />
+        </div>
+      </AppContext.Provider>
     );
   }
 }
