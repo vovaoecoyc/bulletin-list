@@ -19,7 +19,7 @@ class AdList extends React.Component {
               ) : (
                 ''
               )}
-              {this.context.adverts.map((value, i) => (
+              {this.context.adverts.reverse().map((value, i) => (
                 <AdItem key={i + Math.random() * 100} id={i + 1} item={value} />
               ))}
             </div>
